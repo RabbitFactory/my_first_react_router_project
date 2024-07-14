@@ -1,8 +1,19 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate  } from "react-router-dom";
 import allData from '../data.json';
 import Nav from "../Nav/Nav";
+import { useState } from "react";
 
 const BookDetails = () => {
+
+
+
+const handleRead = (id) => {
+    setReadData(id)
+    
+}
+
+
+
 
     const { id } = useParams();
 
@@ -50,7 +61,7 @@ const BookDetails = () => {
                             </div>
                         </div>
                             <div className="flex gap-6">
-                                <button className="btn bg-transparent text-xl px-10">Read</button>
+                                <button onClick={() => handleRead(allData[id - 1].bookId)} className="btn bg-transparent text-xl px-10">Read</button>
                                 <button className="px-10 bg-blue-300 text-xl btn">Wishlist</button>
                             </div>
                     </div>
