@@ -1,13 +1,16 @@
 import {  Outlet } from 'react-router-dom'
 import Nav from '../Nav/Nav'
 
+
 const Home = () => {
+
   return (
-    <div>
+    <div className='container mx-auto'>
       <Nav></Nav>
-      <Outlet></Outlet>
+      <Outlet ></Outlet>
     </div>
     
   )
 }
 export default Home
+
