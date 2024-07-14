@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className='container mx-auto'>
       <Nav></Nav>
-      <Outlet ></Outlet>
+      <Outlet></Outlet>
     </div>
     
   )

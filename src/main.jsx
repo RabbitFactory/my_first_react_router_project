@@ -8,6 +8,7 @@ import Listed_books from './components/Listed Books/Listed_books.jsx';
 import Page_to_read from './components/Page to Read/Page_to_read.jsx';
 import Favorites from './components/Our Favorites/Favorites.jsx';
 import Contact from './components/Contact us/Contact.jsx';
+import BookDetails from './components/BookDetails/BookDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       }
     ]
   },
+  {
+    path: "/book/:id",
+    element: <BookDetails></BookDetails>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
